@@ -21,6 +21,11 @@
 			{
 				var height= document.getElementById("Height").value;
 				var weight= document.getElementById("Weight").value;
+				if (height==null || height=="" || weight==null || weight=="")
+				{
+					alert("Please fill all the inputs");
+					return false;
+				}
 				var bmi = weight/(height*height);
 				document.getElementById("result").innerHTML = bmi;
 				if(bmi<18.5) {
@@ -34,9 +39,6 @@
 				}
 				else if(bmi>30) {
 					document.getElementById("result2").innerHTML ="Obese";
-				}
-				else{
-					document.getElementById("result2").innerHTML = "You are not human.";
 				}
 			}
 		</script>
