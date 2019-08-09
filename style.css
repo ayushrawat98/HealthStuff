@@ -1,0 +1,14 @@
+p{
+    background-color: aliceblue;
+    border-bottom:3px lightblue;
+
+}
+input[type=number]{
+    width:100%;
+    background-color:lightcyan;
+    color:black;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
